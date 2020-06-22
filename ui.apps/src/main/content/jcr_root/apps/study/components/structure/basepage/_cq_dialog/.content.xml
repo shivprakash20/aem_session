@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/apps/study/components/structure/basepage/tabs/basic"/>
+                    <advanced
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/apps/study/components/structure/basepage/tabs/advanced"/>
+                    <blueprint
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/apps/study/components/structure/basepage/tabs/blueprint"/>
+                    <cloudservices
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/apps/study/components/structure/basepage/tabs/cloudservices"/>
+                    <livecopy
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/apps/study/components/structure/basepage/tabs/livecopy"/>
+                    <permissions
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/apps/study/components/structure/basepage/tabs/permissions"/>
+                    <personalization
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/apps/study/components/structure/basepage/tabs/personalization"/>
+                    <thumbnail
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/apps/study/components/structure/basepage/tabs/thumbnail"/>
+                    <socialmedia
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/apps/study/components/structure/basepage/tabs/socialmedia"/>
+                    <basicstudy
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Basic Study"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <pagetitle
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="Enter Title under 50 characters"
+                                        fieldDescription="Enter Title under 50 characters"
+                                        fieldLabel="Page Title"
+                                        name="./jcr:title"/>
+                                    <scheduleddate
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                        displayedFormat="YYYY-MM-DD hh:mm a"
+                                        fieldLabel="Scheduled  Date"
+                                        minDate="today"
+                                        name="./scheduledDate"
+                                        required="{Boolean}true"
+                                        type="datetime"
+                                        value="today"/>
+                                </items>
+                            </column>
+                        </items>
+                    </basicstudy>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
